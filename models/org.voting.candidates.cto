@@ -1,0 +1,30 @@
+namespace org.voting.candidates
+
+asset candidates identified by candidateId {
+  o String candidateId
+  o String PartyName default = "OTHERS"
+  o String FirstName
+  o String LastName
+  o String PartySymbol optional
+  o Integer TotalVotes optional
+}
+
+enum PartyName {
+  o INC
+  o BJP
+  o TRS
+  o MIM
+  o CPI
+  o OTHERS
+}
+
+transaction VoteVoted {
+  --> candidates asset
+   o String NewTotalVotes
+  
+}
+
+event VoteGained {
+  --> candidates asset
+  o String NewTotalVotes
+}
