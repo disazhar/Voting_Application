@@ -18,13 +18,15 @@ enum PartyName {
   o OTHERS
 }
 
-transaction VoteVoted {
+transaction VotesVoted {
   --> candidates asset
+   o String TotalVotes
    o String NewTotalVotes
   
 }
 
 event VoteGained {
   --> candidates asset
+  o String TotalVotes
   o String NewTotalVotes
 }
