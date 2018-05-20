@@ -1,17 +1,28 @@
-candidates = input("How many candidates do we have?\n")
-candidates = int(candidates)
-print("OK! So we have " + str(candidates) + " votable candidates.")
-print("Specify their names!\n")
+candidates = open(org.voting.candidates.candidates)
+
+for candidatesId in range(candidates): 
+    print(int(candidatesId)) 
+def Votes(tx):
+    tx.TotalVotes=[]
+    tx.NewTotalVotes=tx.TotalVotes=+
+    abs(tx.NewTotalVotes)
+
+         
+     dict = {}
+ 
+    
+          dict[value] = []
+ 
+     for (key,value) in votes.iteritems():
+          dict[value].append(key)
+ 
+     maxVote = sorted(dict.keys(),reverse=True)[0]
+ 
+     if len(dict[maxVote])>1:
+         print sorted(dict[maxVote])[0]
+     else:
+         print dict[maxVote][0]
+ 
 
 
-for candidates_number in range(candidates): 
-    print(int(candidates_number)) '''to help me visualize what i'm doing'''
 
-
-overall = candidates
-print(list(range(overall)))
-complete_list = range(overall)
-print(complete_list) '''to help me visualize what i'm doing'''
-
-for candidate_name in range(complete_list):
-    print("Write candidates names.\n")
