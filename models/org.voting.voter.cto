@@ -1,0 +1,19 @@
+namespace org.voting.voter
+
+abstract participant VotingParticipant identified by voterId {
+  o String voterId
+  o Details VoterDetails
+
+}
+
+concept Details {
+  o String firstname
+  o String lastname
+  o Integer AadhaarNum    
+}
+participant VotingAdmin extends VotingParticipant {
+  
+}
+participant Voter extends VotingParticipant{
+  
+}
